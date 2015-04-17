@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "JiraHelper",
+  "description": "Provides clickable Jira Issues on definable websites",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "assets/img/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "JiraHelper"
+  },
+  "background": {
+    "scripts": ["assets/js/background.js"]
+  },
+  "permissions": [
+    "storage", "webNavigation", "tabs", "activeTab", "http://*/", "https://*/"
+  ]
+}

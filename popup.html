@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script src="assets/js/popup.js"></script>
+        <script id="row" type="text/template">
+            <tr data-page="{{page}}">
+                <td>
+                    <input class="form-control input-sm" name="page" type="text" value="{{page}}" />
+                </td>
+                <td>
+                    <input class="form-control input-sm" name="jira" type="text" value="{{jira}}" />
+                </td>
+                <td class="text-right text-nowrap">
+                    <button type="button" name="save" class="btn btn-success btn-sm">
+                        <i class="glyphicon glyphicon-floppy-disk"></i>
+                        save
+                    </button>
+                    <button type="button" name="remove" class="btn btn-danger btn-sm">
+                        <i class="glyphicon glyphicon-trash"></i>
+                        remove
+                    </button>
+                </td>
+            </tr>
+        </script>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container" style="width: 800px;">
+            <h4>Settings</h4>
+            <table id="mappings" class="table">
+                <colgroup>
+                    <col width="50%" span="2" />
+                    <col width="0" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                            Page
+                        </th>
+                        <th>
+                            Jira-URL
+                        </th>
+                        <th class="text-right">
+                            <button type="button" id="add" class="btn btn-success btn-sm">
+                                <i class="glyphicon glyphicon-plus-sign"></i>
+                                add
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
